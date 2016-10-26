@@ -3,7 +3,7 @@
 
 	00. RESET
 	01. GENERAL
-	02. HEADER
+	02. HOME
 	03. 
 	04. 
 	
@@ -25,5 +25,23 @@ body {
 
 h1 {
     font-family: 'Montserrat';
-    font-size: 1em;
+    font-size: 5em;
+    text-align:center;
+
+}
+
+/***** 02. HOME *****/
+.categories{
+	position:relative;
+	max-width:400;
+	width:100%;
+	height:25vh;
+	border-top:1px solid #BFBFBF;
+	
+}
+.categories_text{
+	vertical-align: center;
+	text-align:center;
+	font-size: 4em;
+
 }
