@@ -20,15 +20,16 @@
 /***** 01. GENERAL *****/
 
 body {
-    font-family: 'Rubik';
+    font-family: 'Lato';
 }
 
 h1 {
-    font-family: 'Montserrat';
+    font-family: 'Rubik';
     font-size: 5em;
     text-align:center;
 
 }
+
 
 /***** 02. HOME *****/
 .categories{
@@ -40,8 +41,11 @@ h1 {
 	
 }
 .categories_text{
-	vertical-align: center;
-	text-align:center;
+	text-align:left;
+	padding-left: 45%;
 	font-size: 4em;
-
+    font-family: 'Rubik';
+    height: 25vh;
+    line-height: 25vh;
+    
 }
