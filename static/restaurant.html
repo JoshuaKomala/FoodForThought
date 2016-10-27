@@ -30,21 +30,32 @@
 <!-- ************************* BODY *************************-->
     
 <body>
-    <header>
-        <div>
-            <nav>
-                <ul id="nav_bar">
-                    <li style="float:left"><a data-scroll href="javascript:history.back()" class="left">Back</a></li>
-                    <li style="display:inline-block">Restaurants</li>
-                    <li>
-                        <a id="nav_ham" class="nav_element">
-                            <div class="glyphicon glyphicon-menu-hamburger"></div>
-                        </a>
-                    </li>
-                </ul> 
-            </nav>
+    <div id="fixed_nav">
+        <div id="nav_back" class="nav_element"> 
+            <div class="glyphicon glyphicon-chevron-left"></div> 
+            Back
         </div>
-    </header>
+        <div id="nav_title" class="nav_element"> Food For Thought </div>
+        <div id="nav_ham" class="nav_element">
+            <div class="glyphicon glyphicon-menu-hamburger"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="title_panel">
+            <h1 id="home_title">How would you like to choose your meal today?</h1>
+        </div>
+        <div class="panel_height">
+            <div class="cuisine_type">
+            </div>
+            <div class="cuisine_type">
+            </div>
+            <div class="cuisine_type">
+            </div>
+            <div class="cuisine_type">
+            </div>
+        </div>
+    </div>
+
     <a href="place.html">Sample List Item</a>
 </body>
 </html>
