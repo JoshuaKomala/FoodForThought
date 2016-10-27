@@ -8,7 +8,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Food For Thought</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
@@ -18,6 +18,11 @@
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
 </head>
     
@@ -25,10 +30,34 @@
     
 <html>
     <body>
-        How would you like to choose your meal today?
-        <input type="button" onclick="location.href = 'affordability.html';" value="Affordability">
-        <input type="button" onclick="location.href = 'nutrition.html';" value="Nutrition">
-        <input type="button" onclick="location.href = 'restaurant.html';" value="Restaurant">
+
+    <!-- ***************** NAVIGATION BAR ***************** -->
+        <div class="container">
+            <div id="fixed_nav">
+                <div id="nav_back" class="nav_element"> <strong>&lt</strong> Back</div>
+                <div id="nav_title" class="nav_element"> Food For Thought </div>
+                <div id="nav_ham" class="nav_element">
+                    <div class="ham_line"></div>
+                    <div class="ham_line"></div>
+                    <div class="ham_line"></div>
+                </div>
+            </div>
+            <div class="panel_height ">
+                <h1 id="home_title">How would you like to choose your meal today?</h1>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'affordability.html';" value="Affordability">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Affordability</div>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'nutrition.html';" value="Nutrition">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Nutrition</div>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'restaurant.html';" value="Restaurant">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Restaurants</div>
+            </div>
+        </div>
     </body>
 </html>
 

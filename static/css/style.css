@@ -3,7 +3,7 @@
 
 	00. RESET
 	01. GENERAL
-	02.
+	02. HOME
 	03. 
 	04. 
 	
@@ -16,3 +16,100 @@
 /*-----------------------------------------------------------------------------------*/
 /*
 /*-----------------------------------------------------------------------------------*/
+
+/***** 01. GENERAL *****/
+html,body{
+	margin: 0px;
+	height:100%;
+}
+body {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-size: 5em;
+    text-align:center;
+
+}
+.container{
+	position:absolute;
+	height:100%;
+}
+.nav_element{
+	display:inline-block;
+	font-size:3.5em;
+}
+#nav_back{
+	padding: 15px 0px 0px 20px;
+	text-align:left;
+	width:20%;
+}
+#nav_title{
+	padding-top:15px;
+	width:60%;
+	text-align:center;
+}
+#nav_ham{
+	padding: 20px 30px 0px 0px;
+	width:66px;
+	height:66px;
+	float:right;
+}
+.ham_line{
+	width:100%;
+	height:10px;
+	border-radius: 8px/ 4px;
+	background-color:black;
+}
+.ham_line:first-child {
+	margin-bottom:13px;
+}
+.ham_line:last-child{
+	margin-top:13px;
+}
+
+/***** 02. HOME *****/
+#home_title{
+	margin:0px;
+	padding-top:2vh;
+}
+
+.placeholder_img{
+	width:7vh;
+	height:7vh;
+	border-radius: 7vh/ 7vh;
+	background-color: #BFBFBF;
+	display:inline-block;
+}
+.panel_height{
+	height:23vh;
+
+}
+.center_align{
+	text-align:center;
+}
+.categories{
+
+	position:relative;
+	border-top:1px solid #BFBFBF;
+	text-align:center;
+	cursor:pointer;
+	
+}
+.categories_text{
+	display:inline-block;
+	line-height:23vh;
+    text-align:left;
+	padding-left: 10%;
+	font-size: 4em;
+    
+    
+}
+
+#fixed_nav{
+	position:relative;
+	width:100%;
+	height:6vh;
+	background-color:#BFBFBF;
+}
