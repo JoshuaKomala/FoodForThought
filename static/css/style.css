@@ -54,9 +54,6 @@ li a {
     -webkit-transition:.5s;
     transition:.5s;
     position:relative;
-	width:100%;
-	height:6vh;
-	background-color:#BFBFBF;
 }
 .container{
 	margin:0px;
