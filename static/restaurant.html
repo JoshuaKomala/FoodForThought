@@ -6,24 +6,69 @@
     
 <!-- ************************* HEAD *************************-->
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Food For Thought</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Food For Thought</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
 <!-- ************************* FONTS *************************-->
     
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-
-</head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    </head>
     
 <!-- ************************* BODY *************************-->
     
-<body>
-    Restaurants <br>
-    <a href="place.html">Sample List Item</a>
-</body>
+    <body>
+        <div id="fixed_nav">
+            <div id="nav_back" class="nav_element"> 
+                <div class="glyphicon glyphicon-chevron-left"></div> 
+                Back
+            </div>
+            <div id="nav_title" class="nav_element"> Food For Thought </div>
+            <div id="nav_ham" class="nav_element">
+                <div class="glyphicon glyphicon-menu-hamburger"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="title_panel">
+                <h1 id="home_title">How would you like to choose your meal today?</h1>
+            </div>
+            <div class="panel_height">
+                <div class="row">
+                    <a id="american">
+                         <div class="col-sm-6" >American</div>
+                    </a>
+                    <a id="asian">
+                        <div class="col-sm-6">Asian</div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a id="greek">
+                        <div class="col-sm-6">Greek</div>
+                    </a>
+                    <a id="mexican">
+                        <div class="col-sm-6">Mexican</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="menu"></div>
+        <script>
+            $(document).ready(function(){
+                $("#american").click(function(){
+                    $("#menu").append(" <a>Appended text</a>.");
+                });
+            });
+        </script>
+    </body>
+</html>
