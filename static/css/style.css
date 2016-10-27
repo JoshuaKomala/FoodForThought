@@ -18,7 +18,10 @@
 /*-----------------------------------------------------------------------------------*/
 
 /***** 01. GENERAL *****/
-
+html,body{
+	margin: 0px;
+	height:100%;
+}
 body {
     font-family: 'Lato';
 }
@@ -29,23 +32,55 @@ h1 {
     text-align:center;
 
 }
+.container{
+	position:absolute;
+	height:100%;
+}
+#nav_back{
+	padding: 10px 0px 0px 20px;
+	font-size: 4em;
+}
 
 
 /***** 02. HOME *****/
+#home_title{
+	margin:0px;
+	padding-top:2vh;
+}
+
+.placeholder_img{
+	width:7vh;
+	height:7vh;
+	border-radius: 7vh/ 7vh;
+	background-color: #BFBFBF;
+	display:inline-block;
+}
+.panel_height{
+	height:23vh;
+
+}
+.center_align{
+	text-align:center;
+}
 .categories{
+
 	position:relative;
-	max-width:400;
-	width:100%;
-	height:25vh;
 	border-top:1px solid #BFBFBF;
+	text-align:center;
 	
 }
 .categories_text{
-	text-align:left;
-	padding-left: 45%;
+	display:inline-block;
+	line-height:23vh;
+	text-align:center;
 	font-size: 4em;
-    font-family: 'Rubik';
-    height: 25vh;
-    line-height: 25vh;
     
+    
+}
+
+#fixed_nav{
+	position:relative;
+	width:100%;
+	height:6vh;
+	background-color:#BFBFBF;
 }

@@ -31,16 +31,26 @@
 <html>
     <body>
 
-    NAVA
-        <h1>How would you like to choose your meal today?</h1>
-        <div class="categories" onclick="location.href = 'affordability.html';" value="Affordability">
-            <div class="categories_text">Affordability</div>
-        </div>
-        <div class="categories" onclick="location.href = 'nutrition.html';" value="Nutrition">
-            <div class="categories_text">Nutrition</div>
-        </div>
-        <div class="categories" onclick="location.href = 'restaurant.html';" value="Restaurant">
-            <div class="categories_text">Restaurants</div>
+    <!-- ***************** NAVIGATION BAR ***************** -->
+        <div class="container">
+            <div id="fixed_nav">
+                <div id="nav_back"> <strong>&lt</strong> Back</div>
+            </div>
+            <div class="panel_height ">
+                <h1 id="home_title">How would you like to choose your meal today?</h1>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'affordability.html';" value="Affordability">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Affordability</div>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'nutrition.html';" value="Nutrition">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Nutrition</div>
+            </div>
+            <div class="panel_height categories" onclick="location.href = 'restaurant.html';" value="Restaurant">
+                <div class="placeholder_img"> </div>
+                <div class="categories_text">Restaurants</div>
+            </div>
         </div>
     </body>
 </html>
