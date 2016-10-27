@@ -72,7 +72,8 @@ h1 {
 .categories_text{
 	display:inline-block;
 	line-height:23vh;
-	text-align:center;
+    text-align:left;
+	padding-left: 10%;
 	font-size: 4em;
     
     
