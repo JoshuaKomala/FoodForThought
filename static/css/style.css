@@ -69,6 +69,7 @@ h2 {
 	width:100%;
 	height:6vh;
 	background-color:#BFBFBF;
+	z-index:100;
 }
 #title_panel{
 	height:18vh;
