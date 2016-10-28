@@ -18,6 +18,7 @@
 /*-----------------------------------------------------------------------------------*/
 
 /***** 01. GENERAL *****/
+
 html,body{
 	margin: 0px;
 	height:100%;
@@ -31,6 +32,13 @@ h1 {
     font-size: 5em;
     text-align:center;
 
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-size: 5em;
+    text-align: center;
+    color: #7F939B;
 }
 .container{
 	margin:0px;
@@ -64,6 +72,10 @@ h1 {
 }
 #title_panel{
 	height:18vh;
+}
+
+.jumbotron {
+    background-color: #EEF8FD !important; 
 }
 
 /***** 02. HOME *****/
