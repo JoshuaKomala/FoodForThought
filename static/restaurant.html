@@ -9,6 +9,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/uikit.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Food For Thought</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -44,18 +45,92 @@
         <div id="title_panel">
             <h1 id="home_title">How would you like to choose your meal today?</h1>
         </div>
-        <div class="panel_height">
-            <div class="cuisine_type">
+        <ul id="cuisine" class="uk-subnav">
+            <li data-uk-filter="american" class="cuisine_type">
+                <div class="filter_type">American</div>
+            </li>
+            <li data-uk-filter="asian" class="cuisine_type">
+                <div class="filter_type">Asian</div>
+            </li>
+            <li data-uk-filter="greek" class="cuisine_type">
+                <div class="filter_type">Greek</div>
+            </li>
+            <li data-uk-filter="mexican" class="cuisine_type">
+                <div class="filter_type">Mexican</div>
+            </li>
+        </ul>
+        <div class="uk-grid-width-small-1-2" data-uk-grid="{controls: '#cuisine'}">
+            <div data-uk-filter="american">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Subway</div>
+                </div>
             </div>
-            <div class="cuisine_type">
+            <div data-uk-filter="american">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Round Table</div>
+                </div>
             </div>
-            <div class="cuisine_type">
+            <div data-uk-filter="american">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Burger King</div>
+                </div>
             </div>
-            <div class="cuisine_type">
+            <div data-uk-filter="american">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Crouton's</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;"" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Tapioca Express</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Panda Express</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Shogun</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Lemongrass</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Hi-Thai</div>
+                </div>
+            </div>
+            <div data-uk-filter="asian">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Bombay Coast</div>
+                </div>
+            </div>
+            <div data-uk-filter="greek">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Santorini</div>
+                </div>
+            </div>
+            <div data-uk-filter="mexican">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Rubio's</div>
+                </div>
+            </div>
+            <div data-uk-filter="mexican">
+                <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place.html'">
+                    <div class="restaurant-box-title">Taco Villa</div>
+                </div>
             </div>
         </div>
     </div>
 
-    <a href="place.html">Sample List Item</a>
+
+    <!-- ******************** SCRIPTS ******************** -->
+    <script src="js/uikit.min.js"></script>
+    <script src="js/components/grid.js"></script>
 </body>
 </html>

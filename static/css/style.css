@@ -107,9 +107,28 @@ h1 {
 }
 
 /***** 03. RESTAURANT *****/
+#cuisine{
+	height:20vh;
+	font-size:4em;
+	text-align:center;
+}
+.restaurant-box{
+	margin-top:3vh !important;
+	background-color:#BFBFBF;
+}
+.restaurant-box-title{
+	font-size:4em;
+	line-height:23vh;
+	text-align:center;
+}
+.filter_type{
+	line-height:10vh;
+	
+}
 .cuisine_type{
 	height:10vh;
 	width:50%;
 	float:left;
 	border:1px solid #BFBFBF;
+	margin-top:0px;
 }
