@@ -75,8 +75,11 @@ h2 {
 	height:18vh;
 }
 
-.jumbotron {
-    background-color: #EEF8FD !important; 
+#splashscreen {
+    background-color: #EEF8FD;
+    position:absolute;
+    height:100%;
+    width:100%;
 }
 
 /***** 02. HOME *****/
