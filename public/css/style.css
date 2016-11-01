@@ -1,0 +1,150 @@
+/*-------------------------------------------------------------------------------------
+[TABLE OF CONTENTS]
+
+	00. RESET
+	01. GENERAL
+	02. HOME
+	03. RESTAURANT
+	04. 
+	
+	font-family: 'Karla' 'Montserrat';
+	text: #606060
+	hover: #05b4c6
+	headings: #404040
+	
+-------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*
+/*-----------------------------------------------------------------------------------*/
+
+/***** 01. GENERAL *****/
+
+html,body{
+	margin: 0px;
+	height:100%;
+}
+body {
+    font-family: 'Lato';
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-size: 5em;
+    text-align:center;
+
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-size: 5em;
+    text-align: center;
+    color: #7F939B;
+}
+.container{
+	margin:0px;
+	padding:6vh 0px 0px 0px;
+	width:100%;
+}
+.nav_element{
+	display:inline-block;
+	font-size:3.5em;
+}
+#nav_back{
+	padding: 15px 0px 0px 20px;
+	text-align:left;
+	width:20%;
+}
+#nav_title{
+	padding-top:15px;
+	width:60%;
+	text-align:center;
+}
+#nav_ham{
+	padding: 20px 30px 0px 0px;
+
+	float:right;
+}
+#fixed_nav{
+	position:fixed;
+	width:100%;
+	height:6vh;
+	background-color:#BFBFBF;
+	z-index:100;
+}
+#title_panel{
+	height:18vh;
+}
+
+#splashscreen {
+    background-color: #EEF8FD;
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+/***** 02. HOME *****/
+#home_title{
+	margin:0px;
+	padding-top:2vh;
+}
+.panel_height{
+	height:25vh;
+}
+.center_align{
+	text-align:center;
+}
+.categories{
+
+	position:relative;
+	border-top:1px solid #BFBFBF;
+	text-align:center;
+	cursor:pointer;
+	
+}
+.categories_text{
+	width:50%;
+	display:inline-block;
+	line-height:25vh;
+    text-align:left;
+	padding-left: 8%;
+	font-size: 4em;
+}
+.category_inner{
+	margin:auto;
+	width:75%;
+}
+.category_logo{
+	margin-top:12.5vh;
+	transform:translateY(-50%);
+	vertical-align: center;
+	float:left;
+	width:175px;
+	height:175px;
+}
+
+/***** 03. RESTAURANT *****/
+#cuisine{
+	height:20vh;
+	font-size:4em;
+	text-align:center;
+}
+.restaurant-box{
+	margin-top:3vh !important;
+	background-color:#BFBFBF;
+}
+.restaurant-box-title{
+	font-size:4em;
+	line-height:23vh;
+	text-align:center;
+}
+.filter_type{
+	line-height:10vh;
+	
+}
+.cuisine_type{
+	height:10vh;
+	width:50%;
+	float:left;
+	border:1px solid #BFBFBF;
+	margin-top:0px;
+}
