@@ -1,73 +1,86 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Food For Thought</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
 
-<!-- ************************* LOGISTICS *************************-->
+  <!-- Styles -->
+  <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../public/css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
 
-<html lang="en">
-    
-<!-- ************************* HEAD *************************-->
+  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/main.css">
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <title>Food For Thought</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-<!-- ************************* FONTS *************************-->
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-
+  <script src="../public/js/modernizr-2.7.1.js"></script>
+  
 </head>
-    
-<!-- ************************* BODY *************************-->
-    
-<html>
-    <body>
 
-    <!-- ***************** NAVIGATION BAR ***************** -->
-        <div id="fixed_nav">
-            <div id="nav_back" class="nav_element"> 
-                <div class="glyphicon glyphicon-chevron-left"></div> 
-                Back
-            </div>
-            <div id="nav_title" class="nav_element"> Food For Thought </div>
-            <div id="nav_ham" class="nav_element">
-                <div class="glyphicon glyphicon-menu-hamburger"></div>
-            </div>
+<body>
+
+    <div class="navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="logo" href="index"><i class="fa fa-chevron-left"></i><i class="fa fa-cutlery"></i></a>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home" class="scroll">Home</a></li>
+            <li><a href="help">Help</a></li>
+            <li><a href="about">About</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    
+    <section id="main-info" class="pad-xl" style="padding-top:80px;">
         <div class="container">
-            <div id="title_panel">
-
-                <h1 id="home_title">How would you like to choose your meal today?</h1>
-            </div>
-            <div class="panel_height categories" onclick="location.href = 'affordability';" value="Affordability">
-                <div class="category_inner">
-                    <img class="category_logo" src="../public/images/affordability_logo.png">
-                    <div class="categories_text">Affordability</div>
+            <div class="row">
+            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> How do you want to choose your meal today?</h2>
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
+                    <hr class="line green">
+                    <a href="affordability">
+                    <h3>Affordability</h3>
+                    </a>
                 </div>
-            </div>
-            <div class="panel_height categories" onclick="location.href = 'nutrition';" value="Nutrition">
-                <div class="category_inner">
-                    <img class="category_logo" src="../public/images/nutrition_logo.png">
-                    <div class="categories_text">Nutrition</div>
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
+                    <hr  class="line blue">
+                    <a href="nutrition">
+                    <h3>Nutrition</h3>
+                    </a>
                 </div>
-            </div>
-            <div class="panel_height categories" onclick="location.href = 'restaurant';" value="Restaurant">
-                <div class="category_inner">
-                    <img class="category_logo" src="../public/images/restaurants_logo.png">
-                    <div class="categories_text">Restaurants</div>
+                <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
+                    <hr  class="line yellow">
+                    <a href="restaurant">
+                    <h3>Restaurants</h3>
+                    </a>
                 </div>
             </div>
         </div>
-        <script src="js/script.js"></script>
+    </section>
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/main.js"></script>
+
+   
     </body>
 </html>
-
