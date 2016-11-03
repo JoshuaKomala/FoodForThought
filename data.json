@@ -1,0 +1,342 @@
+{
+	"burgerking": 
+        {   
+            "menu": [
+                {
+                    "name": "Whopper",
+                    "price": "4.99",
+                    "calories": "650",
+                    "fat": "37",
+                    "carbohydrates": "50",
+                    "protein": "22"
+                },
+                {
+                    "name": "Fries, Medium",
+                    "price": "2.39",
+                    "calories": "410",
+                    "fat": "18",
+                    "carbohydrates": "58",
+                    "protein": "4"			
+                },
+                {
+                    "name": "Cheeseburger",
+                    "price": "1.29",
+                    "calories": "270",
+                    "fat": "12",
+                    "carbohydrates": "27",
+                    "protein": "11",
+                },
+                {
+                    "name": "Chicken Nuggets (10 Piece)",
+                    "price": "4.99",
+                    "calories": "470",
+                    "fat": "29",
+                    "carbohydrates": "34",
+                    "protein": "21",
+                },
+                {
+                    "name": "Oreo Shake",
+                    "price": "3.49",
+                    "calories": "730",
+                    "fat": "23",
+                    "carbohydrates": "116",
+                    "protein": "11",
+                },
+                {
+                    "name": "Onion Rings (Medium)",
+                    "price": "2.39",
+                    "calories": "450",
+                    "fat": "24",
+                    "carbohydrates": "57",
+                    "protein": "3",
+                }
+            ],
+            "location": "Price Center East",
+            "cuisine":"American"
+        },
+    "santorini":
+    {
+        "menu": [
+            {
+                "name": "Gyros Pita",
+                "price": "5.49",
+                "calories": "977",
+                "fat": "61",
+                "carbohydrates": "64",
+                "protein": "41",
+            },
+            {
+                "name": "Chicken Pita",
+                "price": "5.59",
+                "calories": "140",
+                "fat": "4.3",
+                "carbohydrates": "13,8",
+                "protein": "10.8",
+            },
+            {
+                "name": "Santorini Plate",
+                "price": "8.99",
+                "calories": "940",
+                "fat": "44",
+                "carbohydrates": "89",
+                "protein": "52",
+            },
+            {
+                "name": "Santorini Island Fries",
+                "price": "7.99",
+                "calories": "823",
+                "fat": "57",
+                "carbohydrates": "105",
+                "protein": "53",
+            },
+            {
+                "name": "Chicken Salad",
+                "price": "7.89",
+                "calories": "197",
+                "fat": "15.6",
+                "carbohydrates": "4.7",
+                "protein": "9",
+            }
+        ],
+        "location": "Price Center East",
+        "cuisine": "Greek"
+    },
+    "Tapioca Express":
+        {
+            "menu": [
+                {
+                    "name": "Crispy Chicken Combo",
+                    "price": "8.25",
+                    "calories": "905",
+                    "fat": "9",
+                    "carbohydrates": "69",
+                    "protein": "20",
+                },
+                {
+                    "name": "Pork Chop Combo",
+                    "price": "8.45",
+                    "calories": "705",
+                    "fat": "12.6",
+                    "carbohydrates": "38",
+                    "protein": "10.2",
+                },
+                {
+                    "name": "Chicken Steak Combo",
+                    "price": "8.45",
+                    "calories": "990",
+                    "fat": "33",
+                    "carbohydrates": "113",
+                    "protein": "58",
+                },
+            ],
+            "location": "Price Center East",
+            "cuisine": "Asian"
+        },
+    "Panda Express":
+        {
+            "menu": [
+                {
+                    "name": "Chow Mein",
+                    "price": "2.80",
+                    "calories": "510",
+                    "fat": "22",
+                    "carbohydrates": "65",
+                    "protein": "13",
+                },
+                {
+                    "name": "Fried Rice",
+                    "price": "2.80",
+                    "calories": "520",
+                    "fat": "16",
+                    "carbohydrates": "85",
+                    "protein": "11",
+                },
+                {
+                    "name": "Steam Vegetables",
+                    "price": "2.80",
+                    "calories": "80",
+                    "fat": "0.5",
+                    "carbohydrates": "16",
+                    "protein": "4",
+                },
+                {
+                    "name": "White Steamed Rice",
+                    "price": "2.80",
+                    "calories": "380",
+                    "fat": "0",
+                    "carbohydrates": "87",
+                    "protein": "7",
+                },
+                {
+                    "name": "Brown Steamed Rice",
+                    "price": "2.80",
+                    "calories": "420",
+                    "fat": "4",
+                    "carbohydrates": "86",
+                    "protein": "9",
+                },
+                {
+                    "name": "Orange Chicken",
+                    "price": "3.80",
+                    "calories": "380",
+                    "fat": "18",
+                    "carbohydrates": "45",
+                    "protein": "14",
+                },
+                {
+                    "name": "Grilled Teriyaki Chicken",
+                    "price": "3.80",
+                    "calories": "300",
+                    "fat": "13",
+                    "carbohydrates": "8",
+                    "protein": "36",
+                },
+                {
+                    "name": "Beijing Beef",
+                    "price": "3.80",
+                    "calories": "470",
+                    "fat": "26",
+                    "carbohydrates": "46",
+                    "protein": "13",
+                },
+                {
+                    "name": "Broccoli Beef",
+                    "price": "3.80",
+                    "calories": "150",
+                    "fat": "7",
+                    "carbohydrates": "13",
+                    "protein": "9",
+                },
+                {
+                    "name": "Kung Pao Chicken",
+                    "price": "3.80",
+                    "calories": "290",
+                    "fat": "19",
+                    "carbohydrates": "14",
+                    "protein": "16",
+                },
+                {
+                    "name": "String Bean Chicken Breast",
+                    "price": "3.80",
+                    "calories": "190",
+                    "fat": "9",
+                    "carbohydrates": "13",
+                    "protein": "14",
+                },
+            ],
+            "location": "Price Center West",
+            "cuisine": "Asian"
+        },
+    "Rubios": {
+        "menu": [
+            {
+                "name": "Original Fish Taco",
+                "price": "3.29",
+                "calories": "330",
+                "fat": "20",
+                "carbohydrates": "23",
+                "protein": "11",
+            },
+            {
+                "name": "California Bowl",
+                "price": "7.69",
+                "calories": "590",
+                "fat": "23",
+                "carbohydrates": "84",
+                "protein": "14",
+            },
+        ],
+        "location": "Price Center West",
+        "cuisine": "Mexican"
+    },
+    "Round Table": {
+        "menu": [
+            {
+                "name": "",
+                "price": "",
+                "calories": "",
+                "fat": "",
+                "carbohydrates": "",
+                "protein": "",
+            },
+        ],
+        "location": "Price Center West",
+        "cuisine": "American"
+    },
+    "Shogun": {
+        "menu": [
+            {
+                "name": "Udon",
+                "price": "6.95",
+                "calories": "325",
+                "fat": "1",
+                "carbohydrates": "70",
+                "protein": "8.3",
+            },
+        ],
+        "location": "Price Center West",
+        "cuisine": "Asian"
+    },
+    "Subway": {
+        "menu": [
+            {
+                "name": "Subway Club",
+                "price": "8.50",
+                "calories": "620",
+                "fat": "9",
+                "carbohydrates": "92",
+                "protein": "46",
+            },  
+            {
+                "name": "Turkey Breast",
+                "price": "8.50",
+                "calories": "560",
+                "fat": "7",
+                "carbohydrates": "92",
+                "protein": "36",
+            },
+            {
+                "name": "Meatball Marinara",
+                "price": "6.50",
+                "calories": "970",
+                "fat": "36",
+                "carbohydrates": "118",
+                "protein": "42",
+            },
+            {
+                "name": "Tuna",
+                "price": "7.50",
+                "calories": "960",
+                "fat": "50",
+                "carbohydrates": "88",
+                "protein": "40",
+            },
+            {
+                "name": "Spicy Italian",
+                "price": "7.50",
+                "calories": "960",
+                "fat": "48",
+                "carbohydrates": "92",
+                "protein": "40",
+            },
+            {
+                "name": "Roast Beef",
+                "price": "8.50",
+                "calories": "640",
+                "fat": "10",
+                "carbohydrates": "90",
+                "protein": "48",
+            },
+            {
+                "name": "Black Forest Ham",
+                "price": "7.50",
+                "calories": "580",
+                "fat": "9",
+                "carbohydrates": "92",
+                "protein": "36",
+            },
+        ],
+        "location": "Price Center West",
+        "cuisine": "American"
+    }
+}
