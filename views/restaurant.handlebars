@@ -6,46 +6,78 @@
     
 <!-- ************************* HEAD *************************-->
 
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../public/css/uikit.css">
-        <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-        <title>Food For Thought</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Food For Thought</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
 
-    
 <!-- ************************* FONTS *************************-->
     
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  
+<!-- ************************* STYLES *************************-->
+
+    <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+  
+  
+</head>
     
 <!-- ************************* BODY *************************-->
 
-    <body>
-        <div id="fixed_nav">
-            <div id="nav_back" class="nav_element"> 
-                <div class="glyphicon glyphicon-chevron-left"></div> 
-                Back
-            </div>
-            <div id="nav_title" class="nav_element"> Food For Thought </div>
-            <div id="nav_ham" class="nav_element">
-                <div class="glyphicon glyphicon-menu-hamburger"></div>
-            </div>
+<body>
+
+<!-- ************************* NAVBAR *************************-->
+    
+    <div class="navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <i id="nav_back" class="fa fa-chevron-left"></i>
         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">Home</a></li>
+            <li><a href="help">Help</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="/">Sign Out</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    
+<!-- ************************* CONTENT *************************-->
+    
+    <section id="main-info" class="pad-xl" style="padding-top:80px;">
         <div class="container">
-            <div id="title_panel">
-                <h1 id="home_title">How would you like to choose your meal today?</h1>
-            </div>
-            <ul id="cuisine" class="uk-subnav">
+            <div class="row">
+            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal by cuisine type.</h2>    
+    
+            <ul id="cuisine" class="uk-subnav" style="padding-left:0px">
                 <li data-uk-filter="american" class="cuisine_type">
                     <div class="filter_type">American</div>
                 </li>
@@ -61,7 +93,7 @@
             </ul>
             <div class="uk-grid-width-small-1-2" data-uk-grid="{controls: '#cuisine'}">
                 <div data-uk-filter="american">
-                    <div class="restaurant-box" style="margin:auto;width:23vh;height:23vh;" onclick="location.href='place'">
+                    <div class="restaurant-box" style="margin: 0 auto;" onclick="location.href='place'">
                         <div class="restaurant-box-title">Subway</div>
                     </div>
                 </div>
@@ -128,10 +160,16 @@
             </div>
         </div>
 
+<!-- ************************* SCRIPTS *************************-->
 
-        <!-- ******************** SCRIPTS ******************** -->
-        <script src="../public/js/script.js"></script>
-        <script src="../public/js/uikit.min.js"></script>
-        <script src="../public/js/components/grid.js"></script>
-    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/script.js"></script>
+    <script src="../public/js/modernizr-2.7.1.js"></script>
+    <script src="../public/js/uikit.min.js"></script>
+    <script src="../public/js/components/grid.js"></script>
+
+</body>
 </html>

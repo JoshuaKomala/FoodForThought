@@ -1,22 +1,14 @@
-/*!
- * SNOW Landing Page Theme
+/*************************************************************************
  *
- * Created by Visual Soldiers
- * Visit us at http://www.visualsoldiers.com
+ * STYLESHEET
  *
- * Handcrafted with love in Atlanta!
- */
-
-
-/* ==========================================================================
-   Global styles
-   ========================================================================== */
+ ************************************************************************/
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
   font-family: 'Montserrat', sans-serif;
 }
 
 p, .lead {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Rubik', sans-serif;
 }
 
 h1 {
@@ -58,7 +50,10 @@ p {
   font-weight: 400;
 }
 
-/*------------------Utilities---------------------*/
+li {
+  list-style-type: none;
+}
+/******************* UTILITIES *******************/
 a {
   color: inherit;
   font-weight: inherit;
@@ -91,7 +86,7 @@ a:hover, a:focus {
 }
 
 
-/*------------------Buttons---------------------*/
+/******************* BUTTONS *******************/
 .btn:focus {
   outline: 0px auto -webkit-focus-ring-color;
   outline: none;
@@ -155,10 +150,8 @@ a:hover, a:focus {
   transition: all 0.35s ease-in-out;
 }
 
+/******************* MARGIN *******************/
 
-
-
-/*-----------------Margins------------------*/
 .margin-0 {
     margin-bottom: 0 !important;
 }
@@ -197,7 +190,7 @@ a:hover, a:focus {
 }
 
 
-/*-----------------Colors------------------*/
+/******************* COLORS *******************/
 
 .black {
   color: #231f20;
@@ -227,11 +220,7 @@ a:hover, a:focus {
 	background: #6d3f96;
 }
 
-
-
-/* ==========================================================================
-   Nav Styles
-   ========================================================================== */
+/******************* NAVIGATION *******************/
 
 .navbar {
     border: 0px solid rgba(0, 0, 0, 0);
@@ -287,9 +276,8 @@ a:hover, a:focus {
 
 
 
-/* ==========================================================================
-   Main styles
-   ========================================================================== */
+/******************* MAIN STYLES *******************/
+
 header {
   background: url(../images/header-bg.jpg) no-repeat center center;
   width: 100%;
@@ -448,7 +436,7 @@ footer {
 
 
 
-/*---------------Pricing Tables-------------------*/
+/******************* MISC *******************/
 
 
 #pricing {
@@ -559,12 +547,39 @@ footer {
     border-radius: 0;
 }
 
+/***** 03. RESTAURANT *****/
+#cuisine{
+	height:20vh;
+	font-size:4em;
+	text-align:center;
+}
+.restaurant-box{
+	margin-top:3vh !important;
+	background-color:#e2f4f5;
+}
+.restaurant-box-title{
+	font-size:10vmin;
+	line-height:23vh;
+	text-align:center;
+    font-family: 'Rubik';
+}
+.filter_type{
+    font-size: 10vmin;
+    line-height: 20vmin;
+    font-family: 'Rubik';
+
+}
+.cuisine_type{
+	height:20vmin;
+	width:50%;
+	float:left;
+	border:1px solid #BFBFBF;
+	margin-top:0px;
+}
 
 
+/******************* LOGIN FORM *******************/
 
-/* ==========================================================================
-   Form styles
-   ========================================================================== */
 .form-control {
     background-color: #FFFFFF;
     background-image: none;
@@ -601,9 +616,7 @@ footer {
 
 
 
-/* ==========================================================================
-   Mobile styles
-   ========================================================================== */
+/******************* MOBILE  *******************/
 /* Landscape phones and down */
 @media (max-width: 480px) { 
 

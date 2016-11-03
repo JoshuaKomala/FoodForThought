@@ -31,15 +31,16 @@ h1 {
     font-family: 'Rubik';
     font-size: 5em;
     text-align:center;
-
 }
 
 h2 {
-    font-family: 'Rubik';
-    font-size: 5em;
-    text-align: center;
-    color: #7F939B;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #70cbce;
+  font-weight: 700;
 }
+
 .container{
 	margin:0px;
 	padding:6vh 0px 0px 0px;
@@ -64,13 +65,7 @@ h2 {
 
 	float:right;
 }
-#fixed_nav{
-	position:fixed;
-	width:100%;
-	height:6vh;
-	background-color:#BFBFBF;
-	z-index:100;
-}
+
 #title_panel{
 	height:18vh;
 }
