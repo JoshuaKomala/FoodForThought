@@ -38,6 +38,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
         
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
     <link rel="stylesheet" href="../public/css/main.css">
   
   
@@ -76,24 +77,42 @@
         <div class="container">
             <div class="row">
             <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal by calorie count.</h2>
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
-                    <hr class="line green">
-                    <a href="affordability">
-                    <h3>Meal 1 - Calorie Count</h3>
-                    </a>
+                <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="ui middle aligned selection list">
+                    <hr class="line red">    
+                      <div class="item dish">
+                        <div class="right floated content">
+                          <div class="ui button">100 cal</div>
+                        </div>  
+                        <img class="ui avatar image" src="../public/images/nutrition_logo.png">
+                        <div class="content">
+                          <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 1</div>
+                        </div>
+                      </div>
+                      <hr class="line red">
+                      <div class="item dish">
+                        <div class="right floated content">
+                          <div class="ui button">120 cal</div>
+                        </div> 
+                        <img class="ui avatar image" src="../public/images/nutrition_logo.png">
+                        <div class="content">
+                          <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 2</div>
+                        </div>
+                      </div>
+                      <hr class="line red">    
+                      <div class="item dish">
+                        <div class="right floated content">
+                          <div class="ui button">300 cal</div>
+                        </div>  
+                        <img class="ui avatar image" src="../public/images/nutrition_logo.png">
+                        <div class="content">
+                          <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 3</div>
+                        </div>
+                      </div>
+                      <hr class="line red">  
+                    </div>
                 </div>
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
-                    <hr  class="line blue">
-                    <a href="nutrition">
-                    <h3>Meal 2 - Calorie Count</h3>
-                    </a>
-                </div>
-                <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
-                    <hr  class="line yellow">
-                    <a href="restaurant">
-                    <h3>Meal 3 - Calorie Count</h3>
-                    </a>
-                </div>
+                <!-- end list -->
             </div>
         </div>
     </section>

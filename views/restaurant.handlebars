@@ -38,6 +38,8 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
         
     <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/uikit.css">
     <link rel="stylesheet" href="../public/css/main.css">
   
   
@@ -75,9 +77,11 @@
     <section id="main-info" class="pad-xl" style="padding-top:80px;">
         <div class="container">
             <div class="row">
-            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal by cuisine type.</h2>    
-    
-            <ul id="cuisine" class="uk-subnav" style="padding-left:0px">
+            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal by cuisine type.</h2>  
+            
+        <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s">    
+            <hr class="line yellow">
+            <ul id="cuisine" class="uk-subnav" style="padding-left: 0px;">
                 <li data-uk-filter="american" class="cuisine_type">
                     <div class="filter_type">American</div>
                 </li>
@@ -91,6 +95,43 @@
                     <div class="filter_type">Mexican</div>
                 </li>
             </ul>
+            
+            <!-- <div class="ui huge horizontal divided list">
+              <div class="item uk_subnav">
+                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                <div class="content">
+                  <li data-uk-filter="american asian greek mexican">
+                      <div class="header">All</div>
+                    </li>
+                </div>
+              </div>
+              <div class="item uk_subnav">
+                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                <div class="content">
+                  <li data-uk-filter="asian">
+                      <div class="header">Asian</div>
+                    </li>
+                </div>
+              </div>
+              <div class="item" data-uk-filter="asian">
+                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                <div class="content">
+                  <div class="header">Asian</div>
+                </div>
+              </div>
+              <div class="item" data-uk-filter="greek">
+                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                <div class="content">
+                  <div class="header">Greek</div>
+                </div>
+              </div> 
+              <div class="item" data-uk-filter="mexican">
+                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                <div class="content">
+                  <div class="header">Mexican</div>
+                </div>
+              </div>    
+            </div> -->
             <div class="uk-grid-width-small-1-2" data-uk-grid="{controls: '#cuisine'}">
                 <div data-uk-filter="american">
                     <div class="restaurant-box" style="margin: 0 auto;" onclick="location.href='place'">
@@ -158,6 +199,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+            <!-- end of col div -->
         </div>
 
 <!-- ************************* SCRIPTS *************************-->

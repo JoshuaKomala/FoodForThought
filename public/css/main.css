@@ -390,6 +390,11 @@ hr.line {
 	color: #81D281;
 }
 
+.red {
+    border-color: #FF918B;
+    color: #FF918B;
+}
+
 
 #invite {
   background: #f2f2f2;
