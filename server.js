@@ -64,6 +64,14 @@ app.get('/place', function(req, res) {
     res.render('place')
 });
 
+app.get('/help', function(req, res) {
+    res.render('help')
+});
+
+app.get('/about', function(req, res) {
+    res.render('about')
+});
+
 // Start the server
 var port = process.env.PORT || PORT; // 80 for web, 3000 for development
 app.listen(port, function() {
