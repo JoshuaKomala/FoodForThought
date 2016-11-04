@@ -3,5 +3,8 @@ $('#nav_back').on("click",function(){
 });
 
 $(".dish").on("click",function(){
-   window.location = "meal"; 
+    var restaurant= $("#restname").attr("value");
+    var dish = $(this).attr("value");
+   window.location = "meal?rest=" + restaurant + "&id=" + dish; 
 });
+

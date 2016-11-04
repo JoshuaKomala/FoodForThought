@@ -75,24 +75,22 @@
     <section id="main-info" class="pad-xl" style="padding-top:80px;">
         <div class="container">
             <div class="row">
-            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Meal Name</h2>
+            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> {{item.name}}</h2>
                 <div class="col-sm-4 wow fadeIn" data-wow-delay="0.4s">
                     <hr class="line green">
-                    <a href="#">
-                    <h3>Restaurant Location</h3>
-                    </a>
+                    <h3>Location: {{location}}</h3>
                 </div>
                 <div class="col-sm-4 wow fadeIn" data-wow-delay="0.8s">
                     <hr  class="line red">
-                    <a href="#">
-                    <h3>Price</h3>
-                    </a>
+                    <h3>Price: $ {{item.price}}</h3>
                 </div>
                 <div class="col-sm-4 wow fadeIn" data-wow-delay="1.2s">
                     <hr  class="line yellow">
-                    <a href="#">
-                    <h3>Nutrition Info</h3>
-                    </a>
+                    <h3>Nutrition Facts</h3>
+                    <h4>Calories: {{item.calories}}</h4>
+                    <h4>Fat: {{item.fat}}</h4>
+                    <h4>Carbohydrates: {{item.carbohydrates}}</h4>
+                    <h4>Protein: {{item.protein}}</h4>
                     <hr class="line blue">
                 </div>
             </div>

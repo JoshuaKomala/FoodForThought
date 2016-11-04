@@ -52,7 +52,8 @@
                 }
             ],
             "location": "Price Center East",
-            "cuisine":"American"
+            "cuisine":"American",
+            "restname":"burgerking"
         },
     "santorini":
     {
@@ -99,7 +100,8 @@
             }
         ],
         "location": "Price Center East",
-        "cuisine": "Greek"
+        "cuisine": "Greek",
+        "restname": "santorini"
     },
     "tapex":
         {
@@ -130,7 +132,8 @@
                 }
             ],
             "location": "Price Center East",
-            "cuisine": "Asian"
+            "cuisine": "Asian",
+            "restname": "tapex"
         },
     "panda":
         {
@@ -225,7 +228,8 @@
                 }
             ],
             "location": "Price Center West",
-            "cuisine": "Asian"
+            "cuisine": "Asian",
+            "restname": "panda"
         },
     "rubios": {
         "menu": [
@@ -247,7 +251,8 @@
             }
         ],
         "location": "Price Center West",
-        "cuisine": "Mexican"
+        "cuisine": "Mexican",
+        "restname": "rubios"
     },
     "roundtable": {
         "menu": [
@@ -261,7 +266,8 @@
             }
         ],
         "location": "Price Center West",
-        "cuisine": "American"
+        "cuisine": "American",
+        "restname": "roundtable"
     },
     "shogun": {
         "menu": [
@@ -275,7 +281,8 @@
             }
         ],
         "location": "Price Center West",
-        "cuisine": "Asian"
+        "cuisine": "Asian",
+        "restname": "shogun"
     },
     "subway": {
         "menu": [
@@ -337,6 +344,7 @@
             }
         ],
         "location": "Price Center West",
-        "cuisine": "American"
+        "cuisine": "American",
+        "restname": "subway"
     }
 }

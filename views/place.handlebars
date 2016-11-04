@@ -78,11 +78,11 @@
             <div class="row">
             <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal from the menu.</h2>
                 <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s">
-                    <div class="ui middle aligned selection list">
+                    <div id="restname" class="ui middle aligned selection list" value={{myMenu.restname}}>
                         {{#each myMenu.menu}}
                             <!-- ONE LIST ITEM -->
                             <hr class="line yellow">    
-                              <div class="item dish">
+                              <div class="item dish" value={{@index}}>
                                 <div class="right floated content">
                                   <div class="ui button">$ {{price}}</div>
                                 </div>  
