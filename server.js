@@ -34,6 +34,8 @@ app.use(express.static(__dirname + '/'));
 //Require the routes folder
 var place = require('./routes/place.js');
 var meal = require('./routes/meal.js');
+var affordability = require('./routes/affordability.js');
+var nutrition = require('./routes/nutrition.js');
 
 
 // Setup routing for requests
@@ -49,13 +51,9 @@ app.get('/login', function(req, res) {
     res.render('login')
 });
 
-app.get('/affordability', function(req, res) {
-    res.render('affordability')
-});
+app.get('/affordability', affordability.view);
 
-app.get('/nutrition', function(req, res) {
-    res.render('nutrition')
-});
+app.get('/nutrition', nutrition.view);
 
 app.get('/restaurant', function(req, res) {
     res.render('restaurant')
