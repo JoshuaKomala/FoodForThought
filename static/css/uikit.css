@@ -232,6 +232,15 @@ h6 {
   color: #444;
   text-transform: none;
 }
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.5px;
+  color: #70cbce;
+  font-weight: 700;
+}
+
 /*
  * Margins
  */

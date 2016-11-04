@@ -14,6 +14,12 @@ var express = require('express');
 // Create the server instance
 var app = express();
 
+// Create Handlebars instance
+var exphbs = require('express3-handlebars');
+
+app.engine('handlebars', exphbs({defaultlayout: 'main'}));
+app.set('view engine', 'handlebars');
+
 // Print logs to the console and compress pages we send
 app.use(express.logger());
 app.use(express.compress());
@@ -22,7 +28,48 @@ app.use(express.compress());
 // whenever they are requested at '/'
 // e.g., http://localhost:3000/index.html
 // maps to /static/index.html on this machine
-app.use(express.static(__dirname + '/static'));
+//app.use(express.static(__dirname + '/static'));
+app.use(express.static(__dirname + '/'));
+
+//Require the routes folder
+var place = require('./routes/place.js');
+var meal = require('./routes/meal.js');
+var affordability = require('./routes/affordability.js');
+var nutrition = require('./routes/nutrition.js');
+
+
+// Setup routing for requests
+app.get('/', function(req, res) {
+    res.render('index')
+});
+
+app.get('/home', function(req, res) {
+    res.render('home')
+});
+
+app.get('/login', function(req, res) {
+    res.render('login')
+});
+
+app.get('/affordability', affordability.view);
+
+app.get('/nutrition', nutrition.view);
+
+app.get('/restaurant', function(req, res) {
+    res.render('restaurant')
+});
+
+app.get('/meal', meal.view);
+
+app.get('/place', place.view);
+
+app.get('/help', function(req, res) {
+    res.render('help')
+});
+
+app.get('/about', function(req, res) {
+    res.render('about')
+});
 
 // Start the server
 var port = process.env.PORT || PORT; // 80 for web, 3000 for development

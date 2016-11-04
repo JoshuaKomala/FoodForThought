@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+
+<!-- ************************* LOGISTICS *************************-->
+
+<html lang="en">
+    
+<!-- ************************* HEAD *************************-->
+
+<head>
+  <meta charset="utf-8">
+  <title>Food For Thought</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+<!-- ************************* FONTS *************************-->
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700,900" rel="stylesheet">    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+  
+<!-- ************************* STYLES *************************-->
+
+    <link rel="stylesheet" href="../public/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../public/css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+        
+    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <link rel="stylesheet" href="../public/css/main.css">
+  
+  
+</head>
+    
+<!-- ************************* BODY *************************-->
+
+<body>
+
+<!-- ************************* NAVBAR *************************-->
+    
+    <div class="navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <i id="nav_back" class="fa fa-chevron-left"></i>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="home">Home</a></li>
+            <li><a href="help">Help</a></li>
+            <li><a href="/">Sign Out</a></li>  
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    
+<!-- ************************* CONTENT *************************-->
+    
+    <section id="main-info" class="pad-xl" style="padding-top:80px;">
+        <div class="container">
+            <div class="row">
+            <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal by price.</h2>
+                <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s">
+                    <div class="ui middle aligned selection list">
+                        {{#each menu}}
+                            <!-- ONE LIST ITEM -->
+                            <hr class="line green">    
+                              <div class="item dish" value={{id}}>
+                                <div class="right floated content">
+                                  <div class="ui button">$ {{price}}</div>
+                                </div>  
+                                <img class="ui avatar image" src="../public/images/affordability_logo.png">
+                                <div class="content" style="display:inline-block;">
+                                  <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">{{name}}</div>
+                                </div>
+                              </div> <!-- end LIST ITEM -->
+                        {{/each}}
+                      <hr class="line green">  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+<!-- ************************* SCRIPTS *************************-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../public/js/wow.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="../public/js/main.js"></script>
+    <script src="../public/js/dish.js"></script>
+    <script src="../public/js/modernizr-2.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+    </body>
+</html>    
