@@ -31,6 +31,11 @@ app.use(express.compress());
 //app.use(express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/'));
 
+//Require the routes folder
+var place = require('./routes/place.js');
+var meal = require('./routes/meal.js');
+
+
 // Setup routing for requests
 app.get('/', function(req, res) {
     res.render('index')
@@ -52,17 +57,13 @@ app.get('/nutrition', function(req, res) {
     res.render('nutrition')
 });
 
-app.get('/meal', function(req, res) {
-    res.render('meal')
-});
-
 app.get('/restaurant', function(req, res) {
     res.render('restaurant')
 });
 
-app.get('/place', function(req, res) {
-    res.render('place')
-});
+app.get('/meal', meal.view);
+
+app.get('/place', place.view);
 
 app.get('/help', function(req, res) {
     res.render('help')

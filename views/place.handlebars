@@ -79,19 +79,20 @@
             <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> Choose a meal from the menu.</h2>
                 <div class="col-md-12 wow fadeIn" data-wow-delay="0.4s">
                     <div class="ui middle aligned selection list">
-                    <!-- ONE LIST ITEM -->
-                    <hr class="line yellow">    
-                      <div class="item dish">
-                        <div class="right floated content">
-                          <div class="ui button">$ 6.25</div>
-                        </div>  
-                        <img class="ui avatar image" src="../public/images/restaurants_logo.png">
-                        <div class="content" style="display:inline-block;">
-                          <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 1</div>
-                        </div>
-                      </div> <!-- end LIST ITEM -->
-                            
-                      <!-- ONE LIST ITEM -->
+                        {{#each myMenu.menu}}
+                            <!-- ONE LIST ITEM -->
+                            <hr class="line yellow">    
+                              <div class="item dish">
+                                <div class="right floated content">
+                                  <div class="ui button">$ {{price}}</div>
+                                </div>  
+                                <img class="ui avatar image" src="../public/images/restaurants_logo.png">
+                                <div class="content" style="display:inline-block;">
+                                  <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;"> {{name}} </div>
+                                </div>
+                              </div> <!-- end LIST ITEM -->
+                        {{/each}}
+                     <!-- ONE LIST ITEM
                     <hr class="line yellow">    
                       <div class="item dish">
                         <div class="right floated content">
@@ -101,9 +102,9 @@
                         <div class="content" style="display:inline-block;">
                           <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 2</div>
                         </div>
-                      </div> <!-- end LIST ITEM -->
+                      </div> <!-- end LIST ITEM
                         
-                      <!-- ONE LIST ITEM -->
+                      <!-- ONE LIST ITEM
                     <hr class="line yellow">    
                       <div class="item dish">
                         <div class="right floated content">
@@ -114,7 +115,7 @@
                           <div class="header" style="font-size: 18px; font-family: 'Rubik'; font-weight: 300;">Meal 3</div>
                         </div>
                       </div> <!-- end LIST ITEM -->
-                        
+                    
                       <hr class="line yellow">  
                     </div>
                 </div>
