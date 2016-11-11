@@ -23,6 +23,7 @@ app.set('view engine', 'handlebars');
 // Print logs to the console and compress pages we send
 app.use(express.logger());
 app.use(express.compress());
+app.use(express.bodyParser());
 
 // Return all pages in the /static directory
 // whenever they are requested at '/'
@@ -30,6 +31,9 @@ app.use(express.compress());
 // maps to /static/index.html on this machine
 //app.use(express.static(__dirname + '/static'));
 app.use(express.static(__dirname + '/'));
+
+//global variable
+var username = "";
 
 //Require the routes folder
 var place = require('./routes/place.js');
@@ -44,7 +48,12 @@ app.get('/', function(req, res) {
 });
 
 app.get('/home', function(req, res) {
-    res.render('home')
+    res.render('home', {username: username})
+});
+app.post('/home', function(req,res){
+	username = req.body.username;
+	console.log(username);
+	res.render('home');
 });
 
 app.get('/login', function(req, res) {

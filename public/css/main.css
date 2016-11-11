@@ -443,6 +443,9 @@ footer {
 
 /******************* MISC *******************/
 
+.hide{
+  display:none;
+}
 
 #pricing {
   background: #70cbce;
@@ -553,6 +556,10 @@ footer {
 }
 
 /***** 03. RESTAURANT *****/
+#filter_title{
+  font-size:20px;
+  font-family: 'Rubik';
+}
 #cuisine{
 	height:20vh;
 	font-size:4em;
