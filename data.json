@@ -257,12 +257,12 @@
     "roundtable": {
         "menu": [
             {
-                "name": "",
-                "price": "",
-                "calories": "",
-                "fat": "",
-                "carbohydrates": "",
-                "protein": ""
+                "name": "Personal Pan Pizza (Cheese)",
+                "price": "5.49",
+                "calories": "840",
+                "fat": "28",
+                "carbohydrates": "108",
+                "protein": "36"
             }
         ],
         "location": "Price Center West",
