@@ -443,6 +443,9 @@ footer {
 
 /******************* MISC *******************/
 
+.hide{
+  display:none;
+}
 
 #pricing {
   background: #70cbce;
