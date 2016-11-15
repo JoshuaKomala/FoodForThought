@@ -10,7 +10,7 @@ $(".dish").on("click",function(){
 
 $(".login_form").on("keypress", function(e){
 	if(e.which == '13'){
-		submitForm()
+		submitForm();
 	}
 });
 
