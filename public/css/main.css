@@ -36,6 +36,14 @@ h3 {
   padding: 20px;
 }
 
+h4 {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  color: #231f20;
+  font-weight: 700;
+}
+
 .lead {
   font-size: 21px;
   line-height: 26px;
@@ -442,6 +450,39 @@ footer {
 
 
 /******************* MISC *******************/
+
+.btn-warning.raised:active, .btn-warning.raised.active {
+	background: #e08403s;
+	box-shadow: none;
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+.btn-warning.raised {
+	box-shadow: 0 10px 0 0 #e08403;
+}
+
+.btn-danger.raised:active, .btn-danger.raised.active {
+	background: #c40209;
+	box-shadow: none;
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+.btn-danger.raised {
+	box-shadow: 0 10px 0 0 #c40209;
+}
+
+.btn-success.raised:active, .btn-success.raised.active {
+	background: #207d0f;
+	box-shadow: none;
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+.btn-success.raised {
+	box-shadow: 0 10px 0 0 #207d0f;
+}
 
 .hide{
   display:none;
