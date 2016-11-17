@@ -33,7 +33,7 @@ app.use(express.bodyParser());
 app.use(express.static(__dirname + '/'));
 
 //global variable
-var username = "";
+var username = "Guest";
 
 //Require the routes folder
 var index = require('./routes/index.js')
@@ -52,7 +52,9 @@ app.get('/home', function(req, res) {
     res.render('home', {username: username})
 });
 app.post('/home', function(req,res){
-	username = req.body.username;
+	if (req.body.username != ""){
+		username = req.body.username;
+	}
 	res.render('home');
 });
 
