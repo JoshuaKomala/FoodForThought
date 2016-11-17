@@ -53,7 +53,6 @@ app.get('/home', function(req, res) {
 });
 app.post('/home', function(req,res){
 	username = req.body.username;
-	console.log(username);
 	res.render('home');
 });
 
