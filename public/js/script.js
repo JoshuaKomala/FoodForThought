@@ -10,7 +10,7 @@ $(".dish").on("click",function(){
 
 $(".login_form").on("keypress", function(e){
 	if(e.which == '13'){
-		submitForm()
+		submitForm();
 	}
 });
 
@@ -24,7 +24,11 @@ function submitForm(){
 	}
 	else{
 		$("#login_alert").addClass("hide");
-		$.post("/home", {"username": $("#username").val()}, function(){
+		$.ajax({
+			url: "/home", 
+			method: "post",
+			data: {"username": $("#username").val()}, 
+		}).done(function(){
 			window.location = "home";
 		});
 	}

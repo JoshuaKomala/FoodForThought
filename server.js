@@ -36,6 +36,7 @@ app.use(express.static(__dirname + '/'));
 var username = "";
 
 //Require the routes folder
+var index = require('./routes/index.js')
 var place = require('./routes/place.js');
 var meal = require('./routes/meal.js');
 var affordability = require('./routes/affordability.js');
@@ -43,16 +44,15 @@ var nutrition = require('./routes/nutrition.js');
 
 
 // Setup routing for requests
-app.get('/', function(req, res) {
-    res.render('index')
-});
+app.get('/', index.view);
+
+app.get('/grid', index.viewGrid);
 
 app.get('/home', function(req, res) {
     res.render('home', {username: username})
 });
 app.post('/home', function(req,res){
 	username = req.body.username;
-	console.log(username);
 	res.render('home');
 });
 
