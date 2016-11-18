@@ -10,6 +10,8 @@ exports.homeTest = function(req,res){
 };
 
 exports.homePost = function(req,res){
-	username = req.body.username;
+    if (username != ""){
+	   username = req.body.username; 
+    }
     res.render('home');
 };
