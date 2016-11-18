@@ -57,7 +57,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <i id="nav_back" class="fa fa-chevron-left"></i>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -71,11 +70,13 @@
     
 <!-- ************************* CONTENT *************************-->
     
-    <section id="main-info" class="pad-xl" style="padding-top:80px;">
+    <section id="main-info" class="pad-xl" style="padding-top:80px;padding-bottom:0px;">
         <div class="container">
             <div class="row">
             <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> <u>{{username}}</u>, how do you want to choose your meal today?</h2>
+
                 {{#if ab}}<div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="0.4s" style="background-color: #edffeb;">
+
                     <hr class="line green">
                     <a href="affordability" onclick="ga('send', 'event', 'Button', 'Click', 'Affordability');">
                         <center><h3 style="padding-bottom:40px; margin-bottom: 0px;">Affordability</h3></center>

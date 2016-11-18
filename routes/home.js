@@ -1,5 +1,5 @@
 //global variable
-var username = "";
+var username = "Guest";
 
 exports.home = function(req,res){
     res.render('home', {username: username, ab: true});
