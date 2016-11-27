@@ -252,6 +252,11 @@ a:hover, a:focus {
     letter-spacing: 1px;
 }
 
+.navbar-nav > li {
+  float:right;
+  display: inline-block;
+}
+
 .navbar-inverse .navbar-nav > li > a:hover {
     color: #ffffff;
     opacity: 0.6;
