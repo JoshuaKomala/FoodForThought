@@ -459,12 +459,18 @@ footer {
 
 
 /******************* MISC *******************/
-
+.btn.raised{
+  margin-bottom:15px;
+}
+.btn.raised:active .btn.raised.active{
+  margin-bottom:-15px;
+}
 .btn-warning.raised:active, .btn-warning.raised.active {
 	background: #e08403s;
 	box-shadow: none;
-	margin-bottom: -10px;
-	margin-top: 10px;
+	margin-top: 15px;
+  margin-bottom:-15px;
+
 }
 
 .btn-warning.raised {
@@ -474,8 +480,9 @@ footer {
 .btn-danger.raised:active, .btn-danger.raised.active {
 	background: #c40209;
 	box-shadow: none;
-	margin-bottom: -10px;
-	margin-top: 10px;
+	margin-top: 15px;
+  margin-bottom:-15px;
+
 }
 
 .btn-danger.raised {
@@ -485,13 +492,26 @@ footer {
 .btn-success.raised:active, .btn-success.raised.active {
 	background: #207d0f;
 	box-shadow: none;
-	margin-bottom: -10px;
-	margin-top: 10px;
+	margin-top: 15px;
+  margin-bottom:-15px;
+
 }
 
 .btn-success.raised {
 	box-shadow: 0 10px 0 0 #207d0f;
 }
+
+.btn-info.raised:active, .btn-info.raised.active {
+  background: #269abc;
+  box-shadow: none;
+  margin-top: 15px;
+  margin-bottom:-15px;
+
+}
+.btn-info.raised{
+  box-shadow: 0 10px 0 0 #269abc;
+}
+
 
 .hide{
   display:none;
@@ -634,18 +654,14 @@ footer {
     font-size: 20px;
     line-height: 8vh;
     font-family: 'Rubik';
-    color: #fff;
+    color: #fff !important;
 
 }
 .cuisine_type{
 	height:60px;
 	width:130px;
-	float:left;
     align-content: center;
-	border:5px solid #fff;
-    background-color: #fdc05d;
-	margin-top:-2px;
-    margin-left: -2px;
+	margin:5px; 
 }
 
 

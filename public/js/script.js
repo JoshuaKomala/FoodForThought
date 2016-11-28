@@ -33,3 +33,8 @@ function submitForm(){
 		});
 	}
 }
+
+$(".filter_type").on("click",function(){
+	$(".filter_type").parent().removeClass("active");
+	$(this).parent().addClass("active");
+});
