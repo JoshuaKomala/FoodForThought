@@ -130,6 +130,15 @@ a:hover, a:focus {
   letter-spacing: 1px;
 }
 
+.btn-start {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.33;
+  padding: 18px 28px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 .btn-primary {
   background-color:#70cbce;
   color: #ffffff;
@@ -620,6 +629,14 @@ footer {
   line-height: 1.33;
   padding: 16px 13px;
   letter-spacing: 0px;
+}
+    
+.btn-start {
+  width: 100%;
+  font-size: 13px;
+  line-height: 1.33;
+  padding: 16px 13px;
+  letter-spacing: 0.5px;
 }
 
 #be-the-first { 
