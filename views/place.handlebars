@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="../public/css/animate.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
         
-    <link rel="stylesheet" href="../public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
     <link rel="stylesheet" href="../public/css/main.css">
   
@@ -52,20 +52,12 @@
     
     <div class="navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <i id="nav_back" class="fa fa-chevron-left"></i>
-        </div>
-        <div class="navbar-collapse collapse">
+        <div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="home">Home</a></li>
-            <li><a href="help">Help</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="/">Sign Out</a></li>
+            <li><a href="/"><span class="glyphicon glyphicon-log-out"></span></a></li>
+            <li><a href="help"><span class="glyphicon glyphicon-question-sign"></span></a></li>      
+            <li><a href="home"><span class="glyphicon glyphicon-home"></span></a></li>
+    
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
