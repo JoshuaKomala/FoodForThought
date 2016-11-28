@@ -67,10 +67,11 @@
     
     <div class="navbar-inverse navbar-fixed-top">
       <div class="container">
+      <i id="nav_back" class="fa fa-chevron-left"></i>
         <div>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/"><span class="glyphicon glyphicon-log-out"></span></a></li>
-            <li><a href="help"><span class="glyphicon glyphicon-question-sign"></span></a></li>      
+            <li><a href="help" {{#if ab}}onclick="ga('send', 'event', 'Button', 'Click', 'help_button_original');"{{else}} onclick="ga('send', 'event', 'Button', 'Click', 'help_button_variant');"{{/if}}><span class="glyphicon glyphicon-question-sign"></span></a></li>      
             <li><a href="home"><span class="glyphicon glyphicon-home"></span></a></li>
     
           </ul>
@@ -106,10 +107,10 @@
                     <hr class="line blue" style="margin-top:0px">
                 </div>{{else}}<div class="container" data-wow-delay="0.4s">
                     <div>
-                        <button onclick="window.location='affordability'" class="btn btn-success btn-block raised" type="button"><h4 style="color:white">Affordability</h3></button>
+                        <button onclick="window.location='affordability'" class="btn btn-success btn-block raised" type="button"><h4 style="color:white">Affordability</h4></button>
                     </div>
                     <div style="padding-top:20px; padding-bottom:20px">
-                        <button onclick="window.location='nutrition'" class="btn btn-danger btn-block raised" type="button"><h4 style="color:white">Nutrition</h3></button>
+                        <button onclick="window.location='nutrition'" class="btn btn-danger btn-block raised" type="button"><h4 style="color:white">Nutrition</h4></button>
                     </div>
                     <div>
                         <button onclick="window.location='restaurant'" class="btn btn-warning btn-block raised" type="button"><h4 style="color:white">Restaurant</h4></button>
