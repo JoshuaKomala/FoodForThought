@@ -77,20 +77,33 @@
         <div class="col-xs-12 wow fadeIn" data-wow-delay="0.4s">    
             <div id="filter_title"> Filter: </div>
             <hr class="line yellow">
-            <ul id="cuisine" class="uk-subnav" style="padding-left: 50px; padding-top: 15px">
-                <li data-uk-filter="american" class="cuisine_type">
-                    <div class="filter_type">American</div>
-                </li>
-                <li data-uk-filter="asian" class="cuisine_type">
-                    <div class="filter_type">Asian</div>
-                </li>
-                <li data-uk-filter="greek" class="cuisine_type">
-                    <div class="filter_type">Greek</div>
-                </li>
-                <li data-uk-filter="mexican" class="cuisine_type">
-                    <div class="filter_type">Mexican</div>
-                </li>
-            </ul>
+            <div style="padding-bottom:25px;">
+                <ul id="cuisine" class="uk-subnav" style="padding-left: 50px; padding-top: 15px">
+                    <li data-uk-filter="american" class="btn btn-danger btn-block raised cuisine_type">
+                        <div class="filter_type">American</div>
+                    </li>
+                    <li data-uk-filter="asian" class="btn btn-info btn-block raised cuisine_type">
+                        <div class="filter_type">Asian</div>
+                    </li>
+                    <li data-uk-filter="greek" class="btn btn-warning btn-block raised cuisine_type">
+                        <div class="filter_type">Greek</div>
+                    </li>
+                    <li data-uk-filter="mexican" class="btn btn-success btn-block raised cuisine_type">
+                        <div class="filter_type">Mexican</div>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="container" data-wow-delay="0.4s">
+                    <div>
+                        <button onclick="window.location='affordability'" class="btn btn-success btn-block raised" type="button"><h4 style="color:white">Affordability</h4></button>
+                    </div>
+                    <div style="padding-top:20px; padding-bottom:20px">
+                        <button onclick="window.location='nutrition'" class="btn btn-danger btn-block raised" type="button"><h4 style="color:white">Nutrition</h4></button>
+                    </div>
+                    <div>
+                        <button onclick="window.location='restaurant'" class="btn btn-warning btn-block raised" type="button"><h4 style="color:white">Restaurant</h4></button>
+                    </div>
+                </div> -->
             
         <div id="restaurant_grid" class="uk-grid-width-small-1-2" data-uk-grid="{gutter:20, controls: '#cuisine'}">
             <div data-uk-filter="american">
