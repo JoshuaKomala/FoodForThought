@@ -462,15 +462,11 @@ footer {
 .btn.raised{
   margin-bottom:15px;
 }
-.btn.raised:active .btn.raised.active{
-  margin-bottom:-15px;
-}
 .btn-warning.raised:active, .btn-warning.raised.active {
 	background: #e08403s;
 	box-shadow: none;
 	margin-top: 15px;
   margin-bottom:-15px;
-
 }
 
 .btn-warning.raised {
@@ -510,6 +506,25 @@ footer {
 }
 .btn-info.raised{
   box-shadow: 0 10px 0 0 #269abc;
+}
+
+.btn-warning.raised.home_button:active, .btn-warning.raised.home_button.active {
+  background: #e08403s;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom:-10px;
+}
+.btn-danger.raised.home_button:active, .btn-danger.raised.home_button.active {
+  background: #e08403s;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom:-10px;
+}
+.btn-success.raised.home_button:active, .btn-success.raised.home_button.active {
+  background: #e08403s;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom:5px;
 }
 
 
