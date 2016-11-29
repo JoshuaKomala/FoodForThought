@@ -8,21 +8,6 @@
 
 <head>
     
-    <!-- Google Analytics Content Experiment code -->
-    <script>function utmx_section(){}function utmx(){}(function(){var
-    k='133740695-1',d=document,l=d.location,c=d.cookie;
-    if(l.search.indexOf('utm_expid='+k)>0)return;
-    function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
-    indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
-    length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
-    '<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
-    '://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
-    '&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
-    valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
-    '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
-    </script><script>utmx('url','A/B');</script>
-    <!-- End of Google Analytics Content Experiment code -->
-    
   <meta charset="utf-8">
   <title>Food For Thought</title>
   <meta name="keywords" content="">
@@ -85,26 +70,7 @@
             <div class="row">
             <h2 style="margin-left:20px; margin-right: 20px; margin-top: 10px;padding-bottom: 25px"> <u>{{username}}</u>, how do you want to choose your meal today?</h2>
 
-                {{#if ab}}<div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="0.4s" style="background-color: #edffeb;">
-
-                    <hr class="line green">
-                    <a href="affordability" onclick="ga('send', 'event', 'Button', 'Click', 'Affordability');">
-                        <center><h3 style="padding-bottom:40px; margin-bottom: 0px;">Affordability</h3></center>
-                    </a>
-                </div>
-                <div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="0.8s" style="background-color: #ffdede;">
-                    <hr class="line red" style="margin-top:0px">
-                    <a href="nutrition" onclick="ga('send', 'event', 'Button', 'Click', 'Nutrition');">
-                        <center><h3 style="padding-bottom:40px;margin-bottom: 0px;">Nutrition</h3></center>
-                    </a>
-                </div>
-                <div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="1.2s" style="background-color: #fff7de;">
-                    <hr class="line yellow" style="margin-top:0px">
-                    <a href="restaurant" onclick="ga('send', 'event', 'Button', 'Click', 'Restaurant');">
-                        <center><h3 style="padding-bottom:40px;margin-bottom: 0px;">Restaurants</h3></center>
-                    </a>
-                    <hr class="line blue" style="margin-top:0px">
-                </div>{{else}}<div class="container" data-wow-delay="0.4s">
+                <div class="container" data-wow-delay="0.4s">
                     <div>
                         <button onclick="window.location='affordability'" class="btn btn-success btn-block raised home_button" type="button"><h4 style="color:white">Affordability</h4></button>
                     </div>
@@ -114,37 +80,7 @@
                     <div>
                         <button onclick="window.location='restaurant'" class="btn btn-warning btn-block raised home_button" type="button"><h4 style="color:white">Restaurant</h4></button>
                     </div>
-                </div>{{/if}}
-                <!-- <div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="0.4s" style="background-color: #edffeb;">
-                    <hr class="line green">
-                    <a href="affordability" onclick="ga('send', 'event', 'Button', 'Click', 'Affordability');">
-                        <center><h3 style="padding-bottom:40px; margin-bottom: 0px;">Affordability</h3></center>
-                    </a>
                 </div>
-                <div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="0.8s" style="background-color: #ffdede;">
-                    <hr class="line red" style="margin-top:0px">
-                    <a href="nutrition" onclick="ga('send', 'event', 'Button', 'Click', 'Nutrition');">
-                        <center><h3 style="padding-bottom:40px;margin-bottom: 0px;">Nutrition</h3></center>
-                    </a>
-                </div>
-                <div class="col-xs-10-offset-2 wow fadeIn" data-wow-delay="1.2s" style="background-color: #fff7de;">
-                    <hr class="line yellow" style="margin-top:0px">
-                    <a href="restaurant" onclick="ga('send', 'event', 'Button', 'Click', 'Restaurant');">
-                        <center><h3 style="padding-bottom:40px;margin-bottom: 0px;">Restaurants</h3></center>
-                    </a>
-                    <hr class="line blue" style="margin-top:0px">
-                </div> -->
-                <!--<div class="container" data-wow-delay="0.4s">
-                    <div>
-                        <button onclick="window.location='affordability'" class="btn btn-success btn-block raised" type="button"><h4 style="color:white">Affordability</h3></button>
-                    </div>
-                    <div style="padding-top:20px; padding-bottom:20px">
-                        <button onclick="window.location='nutrition'" class="btn btn-danger btn-block raised" type="button"><h4 style="color:white">Nutrition</h3></button>
-                    </div>
-                    <div>
-                        <button onclick="window.location='restaurant'" class="btn btn-warning btn-block raised" type="button"><h4 style="color:white">Restaurant</h4></button>
-                    </div>
-                </div>-->
             </div>
         </div>
     </section>
